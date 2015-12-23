@@ -1,16 +1,16 @@
 # angularjs-collection
 
-An Angular JS service to manage collection of object with a primary key constraint.
+An Angular JS service to manage collections of objects with a primary key constraint.
 
 ## Overview
 
-Import the collection module as a dependency of you module.
+Import the collection module as a dependency of your module.
 
 ```coffee
 angular.module('my_app', ['collection'])
 ```
 
-Create a store leveraging collection
+Create a store leveraging the Collection class
 
 ```coffee
 angular.module('my_app').service 'dataStore',
@@ -21,7 +21,7 @@ angular.module('my_app').service 'dataStore',
     collection: new Collection({primary_key: 'id'})
 ```
 
-Use the store in your controller
+Use the store in your controllers
 
 ```coffee
 angular.module('my_app').controller 'DataController',
@@ -58,10 +58,10 @@ angular.module('my_app').controller 'DataController',
 
 ## Proxy methods
 
-Those methods are simple proxy to lodash and aren't documented here. You may find their documentation on the
-lodash website: https://lodash.com/docs
+Those methods are simple proxy to lodash and aren't documented here. You may find their documentation on
+(lodash's website)[https://lodash.com/docs]
 
-Those proxy method receive the collection's content as argument.
+Those proxy methods conveniently receive the collection's content as an argument:
 
 ```coffee
 dataStore.collection.pluck('first_name')
