@@ -59,7 +59,7 @@ angular.module('my_app').controller 'DataController',
 ## Proxy methods
 
 Those methods are simple proxy to lodash and aren't documented here. You may find their documentation on
-(lodash's website)[https://lodash.com/docs]
+[lodash's website](https://lodash.com/docs)
 
 Those proxy methods conveniently receive the collection's content as an argument:
 
