@@ -4,6 +4,14 @@ An Angular JS service to manage collection of object with a primary key constrai
 
 ## Overview
 
+Import the collection module as a dependency of you module.
+
+```coffee
+angular.module('my_app', ['collection'])
+```
+
+Create a store leveraging collection
+
 ```coffee
 angular.module('my_app').service 'dataStore',
   (
@@ -13,6 +21,7 @@ angular.module('my_app').service 'dataStore',
     collection: new Collection({primary_key: 'id'})
 ```
 
+Use the store in your controller
 
 ```coffee
 angular.module('my_app').controller 'DataController',
