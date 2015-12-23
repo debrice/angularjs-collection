@@ -1,0 +1,24 @@
+{
+  "name": "angularjs-collection",
+  "version": "2.0.0",
+  "homepage": "https://github.com/debrice/angularjs-collection",
+  "authors": [
+    "Brice Leroy <bbrriiccee@gmail.com>"
+  ],
+  "description": "A collection service for AngularJS leveraging lodash",
+  "main": "dist/collection.js",
+  "keywords": [
+    "flux",
+    "collection",
+    "angular",
+    "angularjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
